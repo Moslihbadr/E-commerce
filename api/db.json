@@ -1,0 +1,155 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "category": "Electronics",
+      "title": "iPhone 14",
+      "picture": "product1.jpg",
+      "description": "Description 1",
+      "price": 19.99,
+      "old_price": 39.99,
+      "created_at": "2023-01-01",
+      "updated_at": null
+    },
+    {
+      "id": "2",
+      "category": "Electronics",
+      "title": "Smart TV",
+      "picture": "product2.jpg",
+      "description": "Description 2",
+      "price": 29.99,
+      "old_price": 59.99,
+      "created_at": "2023-02-01",
+      "updated_at": null
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Category 1",
+      "image":"",
+      "description": "Description 1",
+      "created_at": "2023-01-01",
+      "updated_at": null
+    },
+    {
+      "id": "2",
+      "name": "Category 2",
+      "image":"",
+      "description": "Description 2",
+      "created_at": "2023-02-01",
+      "updated_at": null
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "role": "customer",
+      "name": "User 1",
+      "email": "user1@example.com",
+      "phone": "123456789",
+      "created_at": "2023-01-01",
+      "updated_at": null
+    },
+    {
+      "id": "2",
+      "role": "admin",
+      "name": "Admin 1",
+      "email": "admin1@example.com",
+      "phone": "987654321",
+      "created_at": "2023-02-01",
+      "updated_at": null
+    }
+  ],
+  "carts": [
+    {
+      "id": "1",
+      "user_id": "1",
+      "status": "active",
+      "created_at": "2023-01-01",
+      "updated_at": null,
+      "items": [
+        {
+          "product_id": "1",
+          "quantity": 2,
+          "created_at": "2023-01-01"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "user_id": "2",
+      "status": "abandoned",
+      "created_at": "2023-02-01",
+      "updated_at": null,
+      "items": [
+        {
+          "product_id": "2",
+          "quantity": 1,
+          "created_at": "2023-02-01"
+        }
+      ]
+    }
+  ],
+  "wishlists": [
+    {
+      "id": "1",
+      "user_id": "1",
+      "created_at": "2023-01-01",
+      "updated_at": null,
+      "items": [
+        {
+          "product_id": "2",
+          "quantity": 1,
+          "added_at": "2023-01-01"
+        },
+        {
+          "product_id": "1",
+          "quantity": 2,
+          "added_at": "2023-02-01"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "user_id": "2",
+      "created_at": "2023-02-01",
+      "updated_at": null,
+      "items": [
+        {
+          "product_id": "1",
+          "quantity": 1,
+          "added_at": "2023-02-01"
+        }
+      ]
+    }
+  ],
+  "orders": [
+    {
+      "id": "1",
+      "user_id": "1",
+      "order_status": "pending",
+      "created_at": "2023-01-01",
+      "items": [
+        {
+          "product_id": "1",
+          "quantity": 2,
+          "created_at": "2023-01-01"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "user_id": "2",
+      "order_status": "shipped",
+      "created_at": "2023-02-01",
+      "items": [
+        {
+          "product_id": "2",
+          "quantity": 3,
+          "created_at": "2023-02-01"
+        }
+      ]
+    }
+  ]
+}
