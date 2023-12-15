@@ -19,6 +19,7 @@ import { styled } from "styled-components";
 // components
 import CompanyOverview from "./CompanyOverview";
 import Copieright from "./Copyright";
+import { Link } from "react-router-dom";
 
 // Styled components
 const SocialMediaSection = styled.section`
@@ -35,7 +36,7 @@ const SocialMediaLink = styled.a`
   }
 `;
 
-const FooterLink = styled.a`
+const FooterLink = styled(Link)`
   transition: ${(props) => props.theme.transition};
 
   &:hover {
@@ -52,7 +53,7 @@ const FooterHeading = styled.h6`
 const Footer = () => {
   return (
     <>
-      <footer className="container text-center text-lg-start bg-body-tertiary text-muted">
+      <footer className="container text-center text-lg-start bg-body-tertiary text-muted mt-5">
         <SocialMediaSection className="d-flex justify-content-center justify-content-lg-between px-4 py-3 border-bottom">
           <div className="me-5 d-none d-lg-block">
             <span>Get connected with us on social networks:</span>
@@ -85,19 +86,19 @@ const Footer = () => {
               <FooterHeading className="text-uppercase fw-bold mb-2">Pages</FooterHeading>
               <p>
                 <FooterLink
-                  href="#"
+                  to="/"
                   className="text-reset text-decoration-none"
                 >Home</FooterLink>
               </p>
               <p>
                 <FooterLink
-                  href="#"
+                  to="/about"
                   className="text-reset text-decoration-none"
                 >About</FooterLink>
               </p>
               <p>
                 <FooterLink
-                  href="#"
+                  to="/products"
                   className="text-reset text-decoration-none"
                 >Products</FooterLink>
               </p>
@@ -113,7 +114,7 @@ const Footer = () => {
               </p>
               <p>
                 <FooterLink
-                  href="#!"
+                  href="#"
                   className="text-reset text-decoration-none"
                 >Blog</FooterLink>
               </p>

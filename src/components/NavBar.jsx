@@ -3,9 +3,10 @@ import { styled } from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping, faUserPlus } from "@fortawesome/free-solid-svg-icons";
 import { faHeart } from "@fortawesome/free-regular-svg-icons";
+import { NavLink, useNavigate } from "react-router-dom";
 
 // styles for links
-const StyledLink = styled.a`
+const StyledLink = styled(NavLink)`
   border-bottom: transparent solid 3px;
   transition: ${(props) => props.theme.transition};
 
@@ -47,6 +48,8 @@ const StyledButton = styled.button`
 
 const NavBar = () => {
 
+  const navigate = useNavigate()
+
   return (
     <nav className="navbar navbar-expand-lg">
       <div className="container lg-d-flex justify-content-center">
@@ -67,17 +70,17 @@ const NavBar = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
             <li className="nav-item m-2">
-              <StyledLink className="nav-link" href="#">
+              <StyledLink className="nav-link" to='/'>
                 Home
               </StyledLink>
             </li>
             <li className="nav-item m-2">
-              <StyledLink className="nav-link" href="#">
+              <StyledLink className="nav-link" to='/about'>
                 About
               </StyledLink>
             </li>
             <li className="nav-item m-2">
-              <StyledLink className="nav-link" href="#">
+              <StyledLink className="nav-link" to='/products'>
                 Products
               </StyledLink>
             </li>
@@ -95,7 +98,7 @@ const NavBar = () => {
           <div className="d-flex align-items-center">
               <a href="#" style={{color: "#1D1D1D", textDecoration: "none"}}><FontAwesomeIcon icon={faCartShopping} className="me-1" /> (0)</a>
               <a href="#" style={{color: "#1D1D1D", textDecoration: "none"}}><FontAwesomeIcon icon={faHeart} className="me-1 ms-2"  /> (0)</a>
-            <StyledButton className="btn ms-3 me-2 my-3">
+            <StyledButton className="btn ms-3 me-2 my-3" onClick={() => navigate("/login")}>
               Login <FontAwesomeIcon icon={faUserPlus} />
             </StyledButton>
           </div>
