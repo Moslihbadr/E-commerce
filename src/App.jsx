@@ -4,10 +4,36 @@ import { ThemeProvider } from "styled-components";
 // Components
 import NavBar from "./components/NavBar"
 import Footer from "./components/footer/Footer";
-import Hero from "./components/Hero";
+import Login from "./components/Login";
+import Register from "./components/Register";
+import { AuthProvider } from "./context/AuthContext";
+
+// react router
+import {
+  Route,
+  RouterProvider,
+  createBrowserRouter,
+  createRoutesFromElements,
+} from "react-router-dom";
+
+// pages
+import Home from "./pages/Home";
+
+// layouts
+import MainLayout from "./layouts/MainLayout";
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<MainLayout />}>
+      <Route path="/" element={<Home />} />
+      <Route path="login" element={<Login />} />
+      <Route path="register" element={<Register />} />
+    </Route>
+  )
+);
 
 const App = () => {
-  
+
   // global thmeme
   const theme = {
     mainColor: '#ff5921',
@@ -26,13 +52,14 @@ const App = () => {
   };
 
   return (
-    <>
+    <AuthProvider>
       <ThemeProvider theme={theme}>
-        <NavBar />
-        <Hero />
-        <Footer />
+        <RouterProvider router={router}>
+          <NavBar />
+          <Footer />
+        </RouterProvider>
       </ThemeProvider>
-    </>
+    </AuthProvider>
   )
 }
 
