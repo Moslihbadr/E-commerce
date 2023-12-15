@@ -21,7 +21,8 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.20.1",
     "scrollreveal": "^4.0.9",
-    "styled-components": "^6.1.1"
+    "styled-components": "^6.1.1",
+    "sweetalert2": "^11.10.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.37",
