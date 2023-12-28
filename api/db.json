@@ -4,192 +4,940 @@
       "id": "1",
       "category": "Electronics",
       "title": "iPhone 14",
-      "picture": "product1.jpg",
-      "description": "Description 1",
+      "image": "https://www.course-api.com/images/store/product-8.jpeg",
+      "description": "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum Florem ipsum lorem ipsum lorem ipsum lorem ipsum ",
       "price": 19.99,
       "old_price": 39.99,
-      "created_at": "2023-01-01",
-      "updated_at": null
+      "quantity_stock": 114,
+      "featured": true,
+      "updated_at": "2023-12-27"
     },
     {
       "id": "2",
       "category": "Electronics",
-      "title": "Smart TV",
-      "picture": "product2.jpg",
-      "description": "Description 2",
-      "price": 29.99,
-      "old_price": 59.99,
-      "created_at": "2023-02-01",
-      "updated_at": null
+      "title": "iPhone 14",
+      "image": "https://www.course-api.com/images/store/product-8.jpeg",
+      "description": "Description 1",
+      "price": 19.99,
+      "old_price": 39.99,
+      "quantity_stock": 7,
+      "featured": true,
+      "created_at": "2023-01-01",
+      "updated_at": "2023-12-27"
+    },
+    {
+      "id": "681ef3d1",
+      "category": "Test",
+      "title": "Test Pro",
+      "description": "Test Pro desc",
+      "price": "120",
+      "old_price": "200",
+      "quantity_stock": "905",
+      "featured": true,
+      "created_at": "2023-12-25",
+      "updated_at": "2023-12-25"
     }
   ],
   "categories": [
     {
-      "id": "1",
-      "name": "Category 1",
-      "image": "",
-      "description": "Description 1",
-      "created_at": "2023-01-01",
-      "updated_at": null
+      "id": "f70c26bb-b13a-498b-92e8-8f9d0ebf47f5",
+      "name": "Test",
+      "description": "Test desc updates",
+      "created_at": "2023-12-25",
+      "updated_at": "2023-12-25"
     },
     {
-      "id": "2",
-      "name": "Category 2",
-      "image": "",
-      "description": "Description 2",
-      "created_at": "2023-02-01",
+      "id": "f873fde8-3b3b-4f97-bd44-656497fa277e",
+      "name": "Test 2",
+      "description": "Test 2 desc",
+      "created_at": "2023-12-25",
+      "updated_at": "2023-12-25"
+    },
+    {
+      "id": "4c83e7a2-b82f-401c-9728-101337e30677",
+      "name": "Test3",
+      "description": "Test 3 desc",
+      "created_at": "2023-12-25",
       "updated_at": null
     }
   ],
   "users": [
     {
-      "id": "195a9a49-d821-4ec1-a8b9-b0bfcc597ffc",
+      "id": "664074d4-3fef-423d-97f9-2a5aef0c306f",
       "role": "customer",
-      "name": "badr 2",
-      "email": "a@a.hh",
-      "phone": "8286",
-      "password": "badr",
-      "created_at": "2023-12-15",
+      "name": "test",
+      "email": "test@test",
+      "phone": "67765",
+      "password": "test",
+      "created_at": "2023-12-21",
       "updated_at": null
     },
     {
-      "id": "e2f8874a-f498-44af-bd52-30427997aa00",
+      "id": "9fbd5ab0-9cc7-4941-ac36-ee6b6dc6a7ca",
       "role": "customer",
-      "name": "ajaj",
-      "email": "a@a",
-      "phone": "8286",
-      "password": "haha",
-      "created_at": "2023-12-15",
+      "name": "test1",
+      "email": "test1@test",
+      "phone": "775557",
+      "password": "test",
+      "created_at": "2023-12-21",
       "updated_at": null
     },
     {
-      "id": "f64ddab8-c9b1-4dbd-ab1b-e72ea8d3c660",
-      "role": "customer",
-      "name": "hahzh",
-      "email": "a@a.hhg",
-      "phone": "67676",
-      "password": "badr",
-      "created_at": "2023-12-15",
-      "updated_at": null
-    },
-    {
-      "id": "e4e19777-601b-4b94-a5ca-cb13bbc35b94",
-      "role": "customer",
-      "name": "moslih",
-      "email": "hah@haha",
-      "phone": "836383",
-      "password": "yaya",
-      "created_at": "2023-12-15",
-      "updated_at": null
-    },
-    {
-      "id": "d2ee0fb3-4d1c-44ff-9e30-12f6caa9de40",
-      "role": "customer",
-      "name": "ilyass",
-      "email": "h@h",
-      "phone": "7637376",
-      "password": "ilyas",
-      "created_at": "2023-12-15",
-      "updated_at": null
-    },
-    {
-      "id": "1eeec84b-1784-457c-b8b2-6335c804614f",
+      "id": "21a2b8a4-4d70-4ab5-a005-fead1280c625",
       "role": "customer",
       "name": "youssef",
-      "email": "youssef@h.h",
-      "phone": "7363737",
-      "password": "youssef",
-      "created_at": "2023-12-15",
+      "email": "youssef@a",
+      "phone": "75856",
+      "password": "aaaa",
+      "created_at": "2023-12-21",
+      "updated_at": null
+    },
+    {
+      "id": "ff3f5bdd-9189-4037-b845-0dce9abba617",
+      "role": "customer",
+      "name": "hhh",
+      "email": "hhh@hhh",
+      "phone": "8866",
+      "password": "hhh",
+      "created_at": "2023-12-21",
+      "updated_at": null
+    },
+    {
+      "id": "47625a1a-4b4f-4200-b274-43af2c2b8b1c",
+      "role": "customer",
+      "name": "aa",
+      "email": "aa@aa",
+      "phone": "7675",
+      "password": "aaaa",
+      "created_at": "2023-12-22",
+      "updated_at": null
+    },
+    {
+      "id": "8df84098-c875-4e38-ad06-fad4951d18db",
+      "role": "customer",
+      "name": "bb",
+      "email": "bb@bb",
+      "phone": "76557",
+      "password": "bbbb",
+      "created_at": "2023-12-22",
+      "updated_at": null
+    },
+    {
+      "id": "a88cce76-f799-4cd6-b86f-818b04632aed",
+      "role": "admin",
+      "name": "dd",
+      "email": "dd@dd",
+      "phone": "67556",
+      "password": "dddd",
+      "created_at": "2023-12-22",
+      "updated_at": null
+    },
+    {
+      "id": "3d6939ef-bc9d-4344-9070-f5ebc8d68c92",
+      "role": "customer",
+      "name": "Badr",
+      "email": "badr@b.b",
+      "phone": "78623782",
+      "password": "badr",
+      "created_at": "2023-12-23",
+      "updated_at": null
+    },
+    {
+      "id": "63fc8656-d143-49e7-a026-33fb485ac406",
+      "role": "customer",
+      "name": "nn",
+      "email": "n@n",
+      "phone": "675765",
+      "password": "nnnn",
+      "created_at": "2023-12-23",
+      "updated_at": null
+    },
+    {
+      "id": "d2441d0f-547f-47a1-9cf3-0687c2a0c4c2",
+      "role": "admin",
+      "name": "Badr",
+      "email": "tt@tt",
+      "phone": "8978",
+      "password": "tttt",
+      "confirmPassword": "tttt",
+      "created_at": "2023-12-25",
       "updated_at": null
     }
   ],
   "carts": [
     {
-      "id": "1",
-      "user_id": "1",
-      "status": "active",
-      "created_at": "2023-01-01",
-      "updated_at": null,
+      "id": "55523533-d833-4473-acdb-94c025b7681c",
+      "user_id": "55523533-d833-4473-acdb-94c025b7681c",
       "items": [
         {
-          "product_id": "1",
+          "image": "https://www.course-api.com/images/store/product-8.jpeg",
+          "title": "iPhone 14",
+          "price": 19.99,
           "quantity": 2,
-          "created_at": "2023-01-01"
+          "subTotal": 39.98
+        },
+        {
+          "image": "https://www.course-api.com/images/store/product-8.jpeg",
+          "title": "iPhone 14",
+          "price": 19.99,
+          "quantity": 3,
+          "subTotal": 59.97
+        },
+        {
+          "image": "https://www.course-api.com/images/store/product-8.jpeg",
+          "title": "Smart TV",
+          "price": 29.99,
+          "quantity": 3,
+          "subTotal": 89.97
+        },
+        {
+          "image": "https://www.course-api.com/images/store/product-8.jpeg",
+          "title": "Smart TV",
+          "price": 29.99,
+          "quantity": 2,
+          "subTotal": 59.98
+        },
+        {
+          "image": "https://www.course-api.com/images/store/product-8.jpeg",
+          "title": "iPhone 14",
+          "price": 19.99,
+          "quantity": 2,
+          "subTotal": 39.98
         }
       ]
     },
     {
-      "id": "2",
-      "user_id": "2",
-      "status": "abandoned",
-      "created_at": "2023-02-01",
-      "updated_at": null,
+      "id": "664074d4-3fef-423d-97f9-2a5aef0c306f",
+      "user_id": "664074d4-3fef-423d-97f9-2a5aef0c306f",
+      "items": []
+    },
+    {
+      "id": "9fbd5ab0-9cc7-4941-ac36-ee6b6dc6a7ca",
+      "user_id": "9fbd5ab0-9cc7-4941-ac36-ee6b6dc6a7ca",
       "items": [
         {
-          "product_id": "2",
-          "quantity": 1,
-          "created_at": "2023-02-01"
+          "id": "1",
+          "image": "https://www.course-api.com/images/store/product-8.jpeg",
+          "title": "iPhone 14",
+          "price": 19.99,
+          "quantity": 3,
+          "subTotal": 59.97
         }
       ]
+    },
+    {
+      "id": "ff3f5bdd-9189-4037-b845-0dce9abba617",
+      "user_id": "ff3f5bdd-9189-4037-b845-0dce9abba617",
+      "items": [
+        {
+          "id": "1",
+          "image": "https://www.course-api.com/images/store/product-8.jpeg",
+          "title": "iPhone 14",
+          "price": 19.99,
+          "quantity": 2,
+          "subTotal": 39.98
+        }
+      ]
+    },
+    {
+      "id": "47625a1a-4b4f-4200-b274-43af2c2b8b1c",
+      "user_id": "47625a1a-4b4f-4200-b274-43af2c2b8b1c",
+      "items": [
+        {
+          "id": "1",
+          "image": "https://www.course-api.com/images/store/product-8.jpeg",
+          "title": "iPhone 14",
+          "price": 19.99,
+          "quantity": 3,
+          "subTotal": 59.97
+        },
+        {
+          "id": "2",
+          "image": "https://www.course-api.com/images/store/product-8.jpeg",
+          "title": "iPhone 14",
+          "price": 19.99,
+          "quantity": 2,
+          "subTotal": 39.98
+        }
+      ]
+    },
+    {
+      "id": "8df84098-c875-4e38-ad06-fad4951d18db",
+      "user_id": "8df84098-c875-4e38-ad06-fad4951d18db",
+      "items": [
+        {
+          "id": "1",
+          "image": "https://www.course-api.com/images/store/product-8.jpeg",
+          "title": "iPhone 14",
+          "price": 19.99,
+          "quantity": 1,
+          "subTotal": 19.99
+        }
+      ]
+    },
+    {
+      "id": "a88cce76-f799-4cd6-b86f-818b04632aed",
+      "user_id": "a88cce76-f799-4cd6-b86f-818b04632aed",
+      "items": []
+    },
+    {
+      "id": "3d6939ef-bc9d-4344-9070-f5ebc8d68c92",
+      "user_id": "3d6939ef-bc9d-4344-9070-f5ebc8d68c92",
+      "items": []
+    },
+    {
+      "id": "63fc8656-d143-49e7-a026-33fb485ac406",
+      "user_id": "63fc8656-d143-49e7-a026-33fb485ac406",
+      "items": []
+    },
+    {
+      "id": "6f72c20a-bc38-4f61-901d-d41ef53d11dd",
+      "user_id": "6f72c20a-bc38-4f61-901d-d41ef53d11dd",
+      "items": []
+    },
+    {
+      "id": "5632ba47-b21b-4773-94c2-03241e0c8755",
+      "user_id": "5632ba47-b21b-4773-94c2-03241e0c8755",
+      "items": []
+    },
+    {
+      "id": "d2441d0f-547f-47a1-9cf3-0687c2a0c4c2",
+      "user_id": "d2441d0f-547f-47a1-9cf3-0687c2a0c4c2",
+      "items": []
     }
   ],
   "wishlists": [
     {
-      "id": "1",
-      "user_id": "1",
-      "created_at": "2023-01-01",
-      "updated_at": null,
+      "id": "21a2b8a4-4d70-4ab5-a005-fead1280c625",
+      "user_id": "21a2b8a4-4d70-4ab5-a005-fead1280c625",
+      "items": []
+    },
+    {
+      "id": "ff3f5bdd-9189-4037-b845-0dce9abba617",
+      "user_id": "ff3f5bdd-9189-4037-b845-0dce9abba617",
       "items": [
         {
-          "product_id": "2",
-          "quantity": 1,
-          "added_at": "2023-01-01"
-        },
-        {
-          "product_id": "1",
-          "quantity": 2,
-          "added_at": "2023-02-01"
+          "id": "1",
+          "image": "https://www.course-api.com/images/store/product-8.jpeg",
+          "title": "iPhone 14",
+          "price": 19.99
         }
       ]
     },
     {
-      "id": "2",
-      "user_id": "2",
-      "created_at": "2023-02-01",
-      "updated_at": null,
+      "id": "47625a1a-4b4f-4200-b274-43af2c2b8b1c",
+      "user_id": "47625a1a-4b4f-4200-b274-43af2c2b8b1c",
       "items": [
         {
-          "product_id": "1",
-          "quantity": 1,
-          "added_at": "2023-02-01"
+          "id": "5",
+          "image": "https://www.course-api.com/images/store/product-8.jpeg",
+          "title": "Smart TV",
+          "price": 29.99
+        }
+      ]
+    },
+    {
+      "id": "8df84098-c875-4e38-ad06-fad4951d18db",
+      "user_id": "",
+      "items": [
+        {
+          "id": "1",
+          "image": "https://www.course-api.com/images/store/product-8.jpeg",
+          "title": "iPhone 14",
+          "price": 19.99
+        }
+      ]
+    },
+    {
+      "id": "a88cce76-f799-4cd6-b86f-818b04632aed",
+      "user_id": "a88cce76-f799-4cd6-b86f-818b04632aed",
+      "items": [
+        {
+          "id": "2",
+          "image": "https://www.course-api.com/images/store/product-8.jpeg",
+          "title": "iPhone 14",
+          "price": 19.99
+        },
+        {
+          "id": "3",
+          "image": "https://www.course-api.com/images/store/product-8.jpeg",
+          "title": "iPhone 14",
+          "price": 19.99
+        },
+        {
+          "id": "1",
+          "image": "https://www.course-api.com/images/store/product-8.jpeg",
+          "title": "iPhone 14",
+          "price": 19.99
+        }
+      ]
+    },
+    {
+      "id": "63fc8656-d143-49e7-a026-33fb485ac406",
+      "user_id": "63fc8656-d143-49e7-a026-33fb485ac406",
+      "items": []
+    },
+    {
+      "id": "6f72c20a-bc38-4f61-901d-d41ef53d11dd",
+      "user_id": "6f72c20a-bc38-4f61-901d-d41ef53d11dd",
+      "items": []
+    },
+    {
+      "id": "5632ba47-b21b-4773-94c2-03241e0c8755",
+      "user_id": "5632ba47-b21b-4773-94c2-03241e0c8755",
+      "items": [
+        {
+          "id": "1",
+          "image": "https://www.course-api.com/images/store/product-8.jpeg",
+          "title": "iPhone 14",
+          "price": 19.99
+        }
+      ]
+    },
+    {
+      "id": "d2441d0f-547f-47a1-9cf3-0687c2a0c4c2",
+      "user_id": "d2441d0f-547f-47a1-9cf3-0687c2a0c4c2",
+      "items": [
+        {
+          "id": "1",
+          "image": "https://www.course-api.com/images/store/product-8.jpeg",
+          "title": "iPhone 14",
+          "price": 19.99
         }
       ]
     }
   ],
   "orders": [
     {
-      "id": "1",
-      "user_id": "1",
-      "order_status": "pending",
-      "created_at": "2023-01-01",
+      "id": "878c2954-fc09-4083-8109-0f1ac259711b",
+      "user_id": "a88cce76-f799-4cd6-b86f-818b04632aed",
+      "shipping_address": "123 street",
+      "name": "Badr",
+      "order_status": "shipped",
+      "created_at": "2023-12-23",
+      "description": "order n° ",
+      "order_total": 19.99,
       "items": [
         {
-          "product_id": "1",
-          "quantity": 2,
-          "created_at": "2023-01-01"
+          "image": "https://www.course-api.com/images/store/product-8.jpeg",
+          "title": "iPhone 14",
+          "price": 19.99,
+          "quantity": 1,
+          "subTotal": 19.99
         }
       ]
     },
     {
-      "id": "2",
-      "user_id": "2",
-      "order_status": "shipped",
-      "created_at": "2023-02-01",
+      "id": "bca65ac5-8ed5-443b-b524-b52a4436cf0e",
+      "user_id": "a88cce76-f799-4cd6-b86f-818b04632aed",
+      "shipping_address": "123 street",
+      "name": "Badr",
+      "order_status": "pending",
+      "created_at": "2023-12-23",
+      "description": "order n° ",
+      "order_total": 139.94,
       "items": [
         {
-          "product_id": "2",
+          "image": "https://www.course-api.com/images/store/product-8.jpeg",
+          "title": "iPhone 14",
+          "price": 19.99,
+          "quantity": 1,
+          "subTotal": 19.99
+        },
+        {
+          "image": "https://www.course-api.com/images/store/product-8.jpeg",
+          "title": "iPhone 14",
+          "price": 19.99,
           "quantity": 3,
-          "created_at": "2023-02-01"
+          "subTotal": 59.97
+        },
+        {
+          "image": "https://www.course-api.com/images/store/product-8.jpeg",
+          "title": "Smart TV",
+          "price": 29.99,
+          "quantity": 2,
+          "subTotal": 59.98
+        }
+      ]
+    },
+    {
+      "id": "785c7af1-57ff-4a78-a07b-60bd59fb587a",
+      "user_id": "a88cce76-f799-4cd6-b86f-818b04632aed",
+      "shipping_address": "123 street",
+      "name": "Badr",
+      "order_status": "delivered",
+      "created_at": "2023-12-23",
+      "description": "order n° 785c7af1-57ff-4a78-a07b-60bd59fb587a",
+      "order_total": 129.95,
+      "items": [
+        {
+          "image": "https://www.course-api.com/images/store/product-8.jpeg",
+          "title": "iPhone 14",
+          "price": 19.99,
+          "quantity": 2,
+          "subTotal": 39.98
+        },
+        {
+          "image": "https://www.course-api.com/images/store/product-8.jpeg",
+          "title": "Smart TV",
+          "price": 29.99,
+          "quantity": 3,
+          "subTotal": 89.97
+        }
+      ]
+    },
+    {
+      "id": "1ab77f07-cb28-424f-a361-580e2083614a",
+      "user_id": "a88cce76-f799-4cd6-b86f-818b04632aed",
+      "shipping_address": "zkzk",
+      "name": "kzkz",
+      "order_status": "delivered",
+      "created_at": "2023-12-23",
+      "description": "order n° 1ab77f07-cb28-424f-a361-580e2083614a",
+      "order_total": 39.98,
+      "items": [
+        {
+          "image": "https://www.course-api.com/images/store/product-8.jpeg",
+          "title": "iPhone 14",
+          "price": 19.99,
+          "quantity": 2,
+          "subTotal": 39.98
+        }
+      ]
+    },
+    {
+      "id": "2d2367bb-9954-4f28-b156-4ec0bc452081",
+      "user_id": "a88cce76-f799-4cd6-b86f-818b04632aed",
+      "shipping_address": "zhzh",
+      "name": "zhzhz",
+      "order_status": "delivered",
+      "created_at": "2023-12-23",
+      "description": "order n° 2d2367bb-9954-4f28-b156-4ec0bc452081",
+      "order_total": 39.98,
+      "items": [
+        {
+          "image": "https://www.course-api.com/images/store/product-8.jpeg",
+          "title": "iPhone 14",
+          "price": 19.99,
+          "quantity": 2,
+          "subTotal": 39.98
+        }
+      ]
+    },
+    {
+      "id": "8611fe39-f813-4467-bb6f-1a0893b5b0cc",
+      "user_id": "5632ba47-b21b-4773-94c2-03241e0c8755",
+      "shipping_address": "badr street",
+      "name": "Badr",
+      "order_status": "pending",
+      "created_at": "2023-12-25",
+      "description": "order n° 8611fe39-f813-4467-bb6f-1a0893b5b0cc",
+      "order_total": 59.97,
+      "items": [
+        {
+          "image": "https://www.course-api.com/images/store/product-8.jpeg",
+          "title": "iPhone 14",
+          "price": 19.99,
+          "quantity": 3,
+          "subTotal": 59.97
+        }
+      ]
+    },
+    {
+      "id": "a5ad4ec0-af02-495f-89b3-60cf56432114",
+      "user_id": "a88cce76-f799-4cd6-b86f-818b04632aed",
+      "shipping_address": "123 street",
+      "name": "Badr Moslih",
+      "phone": "865568",
+      "order_status": "delivered",
+      "created_at": "2023-12-25",
+      "description": "order n° a5ad4ec0-af02-495f-89b3-60cf56432114",
+      "order_total": 299.97,
+      "items": [
+        {
+          "image": "https://www.course-api.com/images/store/product-8.jpeg",
+          "title": "iPhone 14",
+          "price": 19.99,
+          "quantity": 3,
+          "subTotal": 59.97
+        },
+        {
+          "title": "Test Pro",
+          "price": "120",
+          "quantity": 2,
+          "subTotal": 240
+        }
+      ]
+    },
+    {
+      "id": "b39672c0-a440-437e-bad7-d91922e33c48",
+      "user_id": "a88cce76-f799-4cd6-b86f-818b04632aed",
+      "shipping_address": "123 street",
+      "name": "Badr Moslih",
+      "phone": "8763383",
+      "order_status": "delivered",
+      "created_at": "2023-12-25",
+      "description": "order n° b39672c0-a440-437e-bad7-d91922e33c48",
+      "order_total": 119.94999999999999,
+      "delivery_company": "Ozone",
+      "items": [
+        {
+          "image": "https://www.course-api.com/images/store/product-8.jpeg",
+          "title": "iPhone 14",
+          "price": 19.99,
+          "quantity": 3,
+          "subTotal": 59.97
+        },
+        {
+          "image": "https://www.course-api.com/images/store/product-8.jpeg",
+          "title": "iPhone 14",
+          "price": 19.99,
+          "quantity": 2,
+          "subTotal": 39.98
+        }
+      ]
+    },
+    {
+      "id": "706fbdbc-14fc-4397-aa53-9998a507adbc",
+      "user_id": "a88cce76-f799-4cd6-b86f-818b04632aed",
+      "shipping_address": "Test 123",
+      "name": "Test",
+      "phone": "76",
+      "order_status": "delivered",
+      "created_at": "2023-12-25",
+      "description": "order n° 706fbdbc-14fc-4397-aa53-9998a507adbc",
+      "order_total": 69.97999999999999,
+      "delivery_company": "Amana",
+      "delivery_coast": 30,
+      "items": [
+        {
+          "image": "https://www.course-api.com/images/store/product-8.jpeg",
+          "title": "iPhone 14",
+          "price": 19.99,
+          "quantity": 2,
+          "subTotal": 39.98
+        }
+      ]
+    },
+    {
+      "id": "9e42c219-6ded-49a8-8776-43a040000d26",
+      "user_id": "a88cce76-f799-4cd6-b86f-818b04632aed",
+      "shipping_address": "123 refresh",
+      "name": "Test Refresh",
+      "phone": "7867896",
+      "order_status": "delivered",
+      "created_at": "2023-12-25",
+      "description": "order n° 9e42c219-6ded-49a8-8776-43a040000d26",
+      "order_total": 99.96,
+      "delivery_company": "Ozone",
+      "delivery_coast": 20,
+      "items": [
+        {
+          "image": "https://www.course-api.com/images/store/product-8.jpeg",
+          "title": "iPhone 14",
+          "price": 19.99,
+          "quantity": 4,
+          "subTotal": 79.96
+        }
+      ]
+    },
+    {
+      "id": "9787dd00-2e7f-4da7-8f71-c67dd8de7a58",
+      "user_id": "a88cce76-f799-4cd6-b86f-818b04632aed",
+      "shipping_address": "123 street",
+      "name": "Badr",
+      "phone": "7645",
+      "order_status": "pending",
+      "created_at": "2023-12-26",
+      "description": "order n° 9787dd00-2e7f-4da7-8f71-c67dd8de7a58",
+      "order_total": 69.97999999999999,
+      "delivery_company": "Amana",
+      "delivery_coast": 30,
+      "items": [
+        {
+          "image": "https://www.course-api.com/images/store/product-8.jpeg",
+          "title": "iPhone 14",
+          "price": 19.99,
+          "quantity": 2,
+          "subTotal": 39.98
+        }
+      ]
+    },
+    {
+      "id": "2ccbdc61-4852-485c-bef1-f97dc2aca968",
+      "user_id": "a88cce76-f799-4cd6-b86f-818b04632aed",
+      "shipping_address": "123 street",
+      "name": "Badr",
+      "phone": "7676",
+      "order_status": "pending",
+      "created_at": "2023-12-26",
+      "description": "order n° 2ccbdc61-4852-485c-bef1-f97dc2aca968",
+      "order_total": 59.98,
+      "delivery_company": "Ozone",
+      "delivery_coast": 20,
+      "items": [
+        {
+          "image": "https://www.course-api.com/images/store/product-8.jpeg",
+          "title": "iPhone 14",
+          "price": 19.99,
+          "quantity": 2,
+          "subTotal": 39.98
+        }
+      ]
+    },
+    {
+      "id": "a22fb555-2629-45cd-bec2-ec33178f2d23",
+      "user_id": "a88cce76-f799-4cd6-b86f-818b04632aed",
+      "shipping_address": "123 street",
+      "name": "Badr",
+      "phone": "7676",
+      "order_status": "delivered",
+      "created_at": "2023-12-26",
+      "description": "order n° a22fb555-2629-45cd-bec2-ec33178f2d23",
+      "order_total": 89.97,
+      "delivery_company": "Amana",
+      "delivery_coast": 30,
+      "items": [
+        {
+          "id": "2",
+          "image": "https://www.course-api.com/images/store/product-8.jpeg",
+          "title": "iPhone 14",
+          "price": 19.99,
+          "quantity": 3,
+          "subTotal": 59.97
+        }
+      ]
+    },
+    {
+      "id": "bb9dabd5-2297-4118-9b65-8a3ac7a83066",
+      "user_id": "a88cce76-f799-4cd6-b86f-818b04632aed",
+      "shipping_address": "1234 street",
+      "name": "Badr",
+      "phone": "78668",
+      "order_status": "pending",
+      "created_at": "2023-12-26",
+      "description": "order n° bb9dabd5-2297-4118-9b65-8a3ac7a83066",
+      "order_total": 109.96,
+      "delivery_company": "Amana",
+      "delivery_coast": 30,
+      "items": [
+        {
+          "id": "1",
+          "image": "https://www.course-api.com/images/store/product-8.jpeg",
+          "title": "iPhone 14",
+          "price": 19.99,
+          "quantity": 4,
+          "subTotal": 79.96
+        }
+      ]
+    },
+    {
+      "id": "551abd5b-5dd9-4b8b-8f69-9d5f0e387139",
+      "user_id": "a88cce76-f799-4cd6-b86f-818b04632aed",
+      "shipping_address": "123 test",
+      "name": "Badr",
+      "phone": "76576",
+      "order_status": "pending",
+      "created_at": "2023-12-26",
+      "description": "order n° 551abd5b-5dd9-4b8b-8f69-9d5f0e387139",
+      "order_total": 69.97999999999999,
+      "delivery_company": "Amana",
+      "delivery_coast": 30,
+      "items": [
+        {
+          "id": "1",
+          "image": "https://www.course-api.com/images/store/product-8.jpeg",
+          "title": "iPhone 14",
+          "price": 19.99,
+          "quantity": 2,
+          "subTotal": 39.98
+        }
+      ]
+    },
+    {
+      "id": "89068453-fd49-450e-8544-559df9166f3a",
+      "user_id": "a88cce76-f799-4cd6-b86f-818b04632aed",
+      "shipping_address": "321 street",
+      "name": "Badr",
+      "phone": "765356",
+      "order_status": "pending",
+      "created_at": "2023-12-26",
+      "description": "order n° 89068453-fd49-450e-8544-559df9166f3a",
+      "order_total": 109.96,
+      "delivery_company": "Amana",
+      "delivery_coast": 30,
+      "items": [
+        {
+          "id": "1",
+          "image": "https://www.course-api.com/images/store/product-8.jpeg",
+          "title": "iPhone 14",
+          "price": 19.99,
+          "quantity": 4,
+          "subTotal": 79.96
+        }
+      ]
+    },
+    {
+      "id": "4b61eaf1-9d25-4856-9fe2-858544e56a03",
+      "user_id": "a88cce76-f799-4cd6-b86f-818b04632aed",
+      "shipping_address": "312 test",
+      "name": "test",
+      "phone": "76546",
+      "order_status": "pending",
+      "created_at": "2023-12-26",
+      "description": "order n° 4b61eaf1-9d25-4856-9fe2-858544e56a03",
+      "order_total": 109.96,
+      "delivery_company": "Amana",
+      "delivery_coast": 30,
+      "items": [
+        {
+          "id": "1",
+          "image": "https://www.course-api.com/images/store/product-8.jpeg",
+          "title": "iPhone 14",
+          "price": 19.99,
+          "quantity": 4,
+          "subTotal": 79.96
+        }
+      ]
+    },
+    {
+      "id": "f6556532-81f4-4ac0-ba75-913916ab218d",
+      "user_id": "a88cce76-f799-4cd6-b86f-818b04632aed",
+      "shipping_address": "hhh 312",
+      "name": "hhh",
+      "phone": "7685",
+      "order_status": "pending",
+      "created_at": "2023-12-26",
+      "description": "order n° f6556532-81f4-4ac0-ba75-913916ab218d",
+      "order_total": 89.97,
+      "delivery_company": "Amana",
+      "delivery_coast": 30,
+      "items": [
+        {
+          "id": "1",
+          "image": "https://www.course-api.com/images/store/product-8.jpeg",
+          "title": "iPhone 14",
+          "price": 19.99,
+          "quantity": 3,
+          "subTotal": 59.97
+        }
+      ]
+    },
+    {
+      "id": "ab147312-98bb-4707-8ccd-7f5ab1dba1e3",
+      "user_id": "a88cce76-f799-4cd6-b86f-818b04632aed",
+      "shipping_address": "iduhz 76",
+      "name": "bsabas",
+      "phone": "76576",
+      "order_status": "pending",
+      "created_at": "2023-12-26",
+      "description": "order n° ab147312-98bb-4707-8ccd-7f5ab1dba1e3",
+      "order_total": 89.97,
+      "delivery_company": "Amana",
+      "delivery_coast": 30,
+      "items": [
+        {
+          "id": "2",
+          "image": "https://www.course-api.com/images/store/product-8.jpeg",
+          "title": "iPhone 14",
+          "price": 19.99,
+          "quantity": 3,
+          "subTotal": 59.97
+        }
+      ]
+    },
+    {
+      "id": "897cc9a7-352a-481d-b629-5db90b80730c",
+      "user_id": "a88cce76-f799-4cd6-b86f-818b04632aed",
+      "shipping_address": "312 last",
+      "name": "last test",
+      "phone": "7676",
+      "order_status": "pending",
+      "created_at": "2023-12-27",
+      "description": "order n° 897cc9a7-352a-481d-b629-5db90b80730c",
+      "order_total": 89.97,
+      "delivery_company": "Amana",
+      "delivery_coast": 30,
+      "items": [
+        {
+          "id": "2",
+          "image": "https://www.course-api.com/images/store/product-8.jpeg",
+          "title": "iPhone 14",
+          "price": 19.99,
+          "quantity": 3,
+          "subTotal": 59.97
+        }
+      ]
+    },
+    {
+      "id": "4562a373-4a6b-41cf-b6ca-f19e59f28cea",
+      "user_id": "a88cce76-f799-4cd6-b86f-818b04632aed",
+      "shipping_address": "is the last one inchaallah",
+      "name": "this time ",
+      "phone": "876785",
+      "order_status": "pending",
+      "created_at": "2023-12-27",
+      "description": "order n° 4562a373-4a6b-41cf-b6ca-f19e59f28cea",
+      "order_total": 89.97,
+      "delivery_company": "Amana",
+      "delivery_coast": 30,
+      "items": [
+        {
+          "id": "1",
+          "image": "https://www.course-api.com/images/store/product-8.jpeg",
+          "title": "iPhone 14",
+          "price": 19.99,
+          "quantity": 3,
+          "quantity_stock": "120",
+          "subTotal": 59.97
+        }
+      ]
+    },
+    {
+      "id": "40beb34b-9f9c-4dac-b0ad-4fa92eb708d0",
+      "user_id": "a88cce76-f799-4cd6-b86f-818b04632aed",
+      "shipping_address": "kjh",
+      "name": "hjk",
+      "phone": "987",
+      "order_status": "pending",
+      "created_at": "2023-12-27",
+      "description": "order n° 40beb34b-9f9c-4dac-b0ad-4fa92eb708d0",
+      "order_total": 89.97,
+      "delivery_company": "Amana",
+      "delivery_coast": 30,
+      "items": [
+        {
+          "id": "2",
+          "image": "https://www.course-api.com/images/store/product-8.jpeg",
+          "title": "iPhone 14",
+          "price": 19.99,
+          "quantity": 3,
+          "quantity_stock": "10",
+          "subTotal": 59.97
+        }
+      ]
+    },
+    {
+      "id": "6975a44e-52c6-4359-8687-afd92c288482",
+      "user_id": "d2441d0f-547f-47a1-9cf3-0687c2a0c4c2",
+      "shipping_address": "213 street",
+      "name": "Badr",
+      "phone": "7656",
+      "order_status": "delivered",
+      "created_at": "2023-12-28",
+      "description": "order n° 6975a44e-52c6-4359-8687-afd92c288482",
+      "order_total": 79.97,
+      "delivery_company": "Ozone",
+      "delivery_coast": 20,
+      "items": [
+        {
+          "id": "1",
+          "image": "https://www.course-api.com/images/store/product-8.jpeg",
+          "title": "iPhone 14",
+          "price": 19.99,
+          "quantity": 3,
+          "quantity_stock": 117,
+          "subTotal": 59.97
         }
       ]
     }

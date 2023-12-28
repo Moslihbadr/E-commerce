@@ -3,6 +3,8 @@ import hero from "../assets/hero-bg.png";
 import hero2 from "../assets/hero-bg-2.png";
 import { useEffect } from "react";
 import ScrollReveal from "scrollreveal";
+import Button from "./Button";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   const StyledParagraph = styled.p`
@@ -59,6 +61,7 @@ const Hero = () => {
     border-radius: ${(props) => props.theme.raduis};
   `;
 
+  // ScrollReveal animation
   useEffect(() => {
     ScrollReveal().reveal(".hero-description", {
       distance: "200px",
@@ -94,9 +97,10 @@ const Hero = () => {
             Possibilitie
           </StyledHeading>
           <StyledParagraph className="mt-4 lh-lg">
-            Elevate your lifestyle with our curated collection of high-quality
-            products. From cutting-edge electronics to stylish home decor.
+            Elevate your lifestyle with our premium furniture collection,
+            featuring high-quality and stylish pieces to enhance your home.
           </StyledParagraph>
+          <Link to={'/products'}><Button>Shop Now</Button></Link>
         </StyledDescription>
         <ImageContainer className="col d-lg-block d-none p-3 hero-images">
           <StyledImage src={hero} alt="hero" />

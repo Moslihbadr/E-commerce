@@ -1,9 +1,14 @@
 import Logo from "./Logo";
 import { styled } from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCartShopping, faUserPlus } from "@fortawesome/free-solid-svg-icons";
+import { faCartShopping, faRightFromBracket, faUserPlus } from "@fortawesome/free-solid-svg-icons";
 import { faHeart } from "@fortawesome/free-regular-svg-icons";
-import { NavLink, useNavigate } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
+import Button from "./Button";
+import { useContext } from "react";
+import { AuthContext } from "../context/AuthContext";
+import { CartContext } from "../context/CartContext";
+import { WishlistContext } from "../context/WishlistContext";
 
 // styles for links
 const StyledLink = styled(NavLink)`
@@ -26,36 +31,21 @@ const StyledLink = styled(NavLink)`
   }
 `;
 
-// styles for buttons
-const StyledButton = styled.button`
-  transition: ${(props) => props.theme.transition};
-  background-color: ${(props) => props.theme.buttonText};
-  color: ${(props) => props.theme.buttonBg};
-  border-color: ${(props) => props.theme.borderColor};
-  padding: 0.5rem 1rem;
-
-  span.badge {
-    top: -8px;
-    right: 3px;
-  }
-
-  &:hover {
-    color: ${(props) => props.theme.buttonText};
-    background-color: ${(props) => props.theme.buttonBg};
-  }
-
-`;
-
 const NavBar = () => {
 
   const navigate = useNavigate()
+  const { isAdmin, isAuthenticated, logout } = useContext(AuthContext);
+  const { totalItems } = useContext(CartContext);
+  const { total } = useContext(WishlistContext);
+
+  console.log(isAdmin);
 
   return (
-    <nav className="navbar navbar-expand-lg">
+    <nav className="navbar navbar-expand-lg mb-4">
       <div className="container lg-d-flex justify-content-center">
-        <a className="navbar-brand me-auto" href="#">
+        <Link className="navbar-brand me-auto" to="/">
           <Logo fontSize={40} width={150} />
-        </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -84,23 +74,29 @@ const NavBar = () => {
                 Products
               </StyledLink>
             </li>
-            {/* <li className="nav-item m-2">
-              <StyledLink className="nav-link" href="#">
-                FAQs
+            <li className="nav-item m-2">
+              <StyledLink className="nav-link" to='/contact'>
+                Contact
               </StyledLink>
-            </li> */}
-            {/* <li className="nav-item m-2">
-              <StyledLink className="nav-link" href="#">
-                Blog
+            </li>
+            { isAdmin &&
+            <li className="nav-item m-2">
+              <StyledLink className="nav-link" to='/dashboard'>
+                Dashboard
               </StyledLink>
-            </li> */}
+            </li>}
           </ul>
           <div className="d-flex align-items-center">
-              <a href="#" style={{color: "#1D1D1D", textDecoration: "none"}}><FontAwesomeIcon icon={faCartShopping} className="me-1" /> (0)</a>
-              <a href="#" style={{color: "#1D1D1D", textDecoration: "none"}}><FontAwesomeIcon icon={faHeart} className="me-1 ms-2"  /> (0)</a>
-            <StyledButton className="btn ms-3 me-2 my-3" onClick={() => navigate("/login")}>
-              Login <FontAwesomeIcon icon={faUserPlus} />
-            </StyledButton>
+            <Link to="/cart" style={{ color: "#1D1D1D", textDecoration: "none" }}><FontAwesomeIcon icon={faCartShopping} className="me-1" /> ({ isAuthenticated ? totalItems : 0})</Link>
+            <Link to="/wishlist" style={{ color: "#1D1D1D", textDecoration: "none" }}><FontAwesomeIcon icon={faHeart} className="me-1 ms-3" /> ({ isAuthenticated ? total : 0})</Link>
+            {!isAuthenticated ?
+              <Button className="ms-3 me-2 my-3" handleClick={() => navigate('/login')}>
+                Login <FontAwesomeIcon icon={faUserPlus} />
+              </Button> :
+              <Button className='ms-3 me-2 my-3' handleClick={logout} >
+                Logout <FontAwesomeIcon icon={faRightFromBracket} />
+              </Button>
+            }
           </div>
         </div>
       </div>

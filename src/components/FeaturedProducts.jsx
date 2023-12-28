@@ -1,9 +1,9 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import Product from "./ProductCard";
 import Spinner from "./Spinner";
 import Button from "./Button";
 import { Link } from "react-router-dom";
+import ProductCard from "./ProductCard";
 
 const FeaturedProducts = () => {
   const [featuredProducts, setFeaturedProducts] = useState([]);
@@ -30,11 +30,11 @@ const FeaturedProducts = () => {
             <div className="row">
               {featuredProducts.map((product) => (
                 <div key={product.id} className="col-lg-4 col-md-6 col-sm-12">
-                  <Product image={product.image} title={product.title} price={product.price} id={product.id} />
+                  <ProductCard image={product.image} title={product.title} price={product.price} id={product.id} />
                 </div>
               ))}
             </div>
-            <Link to={'/products'} className="link-underline link-underline-opacity-0 mb-5" ><Button>All Products</Button></Link>
+            <Link to={'/products'} className="link-underline link-underline-opacity-0 mb-5" ><Button handleClick={() => null}>All Products</Button></Link>
           </>
           : <Spinner />}
       </div>

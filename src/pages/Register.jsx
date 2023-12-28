@@ -3,10 +3,12 @@ import { useState } from 'react';
 import { styled } from 'styled-components';
 import { currentDate, generateUUID } from '../utils/helpers';
 import Swal from 'sweetalert2';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import Button from '../components/Button';
+import Breadcrumb from '../components/Breadcrumb';
 
 // styled components
-const StyledRegister = styled.div`
+const StyledRegister = styled.form`
   max-width: 350px;
   margin: 10px auto;
 `;
@@ -25,6 +27,8 @@ const Register = () => {
     password: '',
     confirmPassword: '',
   });
+
+  const navigate = useNavigate()
 
   const handleRegistration = async (e) => {
     e.preventDefault();
@@ -81,9 +85,29 @@ const Register = () => {
               },
             }
           );
-          
+
           if (response.status === 201) { // 201 indicates that the request has succeeded and has led to the creation of a resource 
             setIsRegistered(true)
+            // Create a cart for the user
+            try {
+              await axios.post('http://localhost:3000/carts', {
+                id: userData.id,
+                user_id: userData.id,
+                items: []
+              });
+            } catch (error) {
+              console.error('Error :', error);
+            }
+            // Create a wishlist for the user
+            try {
+              await axios.post('http://localhost:3000/wishlists', {
+                id: userData.id,
+                user_id: userData.id,
+                items: []
+              });
+            } catch (error) {
+              console.error('Error :', error);
+            }
             Swal.fire({
               title: 'Registration successful!',
               text: 'Redirecting to login...',
@@ -94,8 +118,7 @@ const Register = () => {
 
             // Redirect to the home page after a delay
             setTimeout(() => {
-              // Use window.location.href for redirecting
-              // window.location.href = '/login';
+              navigate('/login')
             }, 1500);
           } else {
             Swal.fire({
@@ -141,8 +164,9 @@ const Register = () => {
 
   return (
     <>
+      <Breadcrumb />
       <StyledHeading>Create Your Account and Start Exploring</StyledHeading>
-      <StyledRegister>
+      <StyledRegister onSubmit={handleRegistration}>
         <div className="mb-4">
           <label htmlFor="name" className="form-label">
             Name
@@ -214,12 +238,12 @@ const Register = () => {
         </div>
 
         {!isRegistered ? (
-          <button
-            className="btn btn-primary mb-4 w-100"
-            onClick={handleRegistration}
+          <Button
+            className="mb-4 w-100"
+            type='submit'
           >
             Sign up
-          </button>
+          </Button>
         ) : null}
         <p className="text-center">
           Already have an account? <Link to='/login'>Login</Link>

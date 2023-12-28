@@ -14,7 +14,7 @@ const ProductCard = ({ image, title, price, id }) => {
       </div>
       <footer className='mb-4'>
         <h5>{title}</h5>
-        <p>${price}</p>
+        <p>{price} <small>MAD</small></p>
       </footer>
     </Wrapper>
   );
@@ -31,7 +31,7 @@ const Wrapper = styled.article`
   img {
     width: 100%;
     display: block;
-    border-radius: ${props => props.theme.radius};
+    border-radius: ${props => props.theme.raduis};
     transition: ${props => props.theme.transition};
   }
 

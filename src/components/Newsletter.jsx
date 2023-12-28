@@ -1,5 +1,8 @@
 import styled from 'styled-components';
 import Button from './Button';
+import axios from 'axios';
+import { useState } from 'react';
+import Swal from 'sweetalert2';
 
 const NewsletterSection = styled.section`
   background-color: ${(props) => props.theme.bgColor};
@@ -30,33 +33,44 @@ const EmailInput = styled.input`
   padding: 0.5rem 1rem;
   outline: 1px solid transparent;
   border: 1px solid transparent;
-  border-radius: ${(props) => props.theme.radius};
+  border-radius: ${(props) => props.theme.raduis};
   margin-right: 10px;
   width: 250px;
   
   &:focus {
     outline: 1px solid ${(props) => props.theme.borderColor};
     border: 1px solid ${(props) => props.theme.borderColor};
-    border-radius: ${(props) => props.theme.radius};
-    -moz-outline-radius: ${(props) => props.theme.radius};
+    border-radius: ${(props) => props.theme.raduis};
+    -moz-outline-radius: ${(props) => props.theme.raduis};
   }
 `;
 
 const Newsletter = () => {
 
-  const handleSubmit = (event) => {
+  const [email, setEmail] = useState('')
+
+  const handleSubmit = async (event) => {
     event.preventDefault()
+    if (email) {
+      await axios.post('http://localhost:3000/newsletter', { email })
+      setEmail('')
+      Swal.fire({
+        icon: 'success',
+        title: 'Subscribed',
+        text: 'Thank you for subscribing to Our Newsletter',
+      });
+    }
   }
 
   return (
-    <NewsletterSection onSubmit={handleSubmit}>
+    <NewsletterSection>
       <NewsletterHeading>Subscribe to Our Newsletter</NewsletterHeading>
       <NewsletterDescription>
         Stay updated on our latest products and promotions.
       </NewsletterDescription>
-      <NewsletterForm>
-        <EmailInput type="email" placeholder="Your email address" />
-        <Button>Subscribe</Button>
+      <NewsletterForm onSubmit={handleSubmit}>
+        <EmailInput value={email} onChange={(e) => setEmail(e.target.value)} type="email" placeholder="Your email address" />
+        <Button className="my-2">Subscribe</Button>
       </NewsletterForm>
     </NewsletterSection>
   );

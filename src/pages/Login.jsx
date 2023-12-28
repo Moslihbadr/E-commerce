@@ -1,9 +1,11 @@
 import { useState, useContext } from 'react';
 import { AuthContext } from '../context/AuthContext';
-// import { useHistory } from 'react-router-dom'; 
 import styled from 'styled-components';
 import Swal from 'sweetalert2';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import Button from '../components/Button'
+import Breadcrumb from '../components/Breadcrumb';
+
 
 // styled components
 const StyledLogin = styled.div`
@@ -23,6 +25,8 @@ const Login = () => {
     password: '',
   });
 
+  const navigate = useNavigate()
+
   const handleLogin = async (e) => {
     e.preventDefault();
 
@@ -41,7 +45,7 @@ const Login = () => {
             })
             // Redirect to the home page after a delay
             setTimeout(() => {
-              // history.push('/');
+              navigate('/');
             }, 1500);
           } else {
             // Display error message using SweetAlert
@@ -77,6 +81,7 @@ const Login = () => {
 
   return (
     <>
+      <Breadcrumb />
       <StyledHeading>Welcome Back! Log in to Your Account</StyledHeading>
       <StyledLogin>
         <form onSubmit={handleLogin}>
@@ -109,9 +114,9 @@ const Login = () => {
           </div>
           {error && <p style={{ color: 'red' }}>{error}</p>}
           {!isAuthenticated && (
-            <button className="btn btn-primary mb-4 w-100" type="submit">
+            <Button className="mb-4 w-100" type="submit">
               Sign in
-            </button>
+            </Button>
           )}
           <p className="text-center">
             Not a member? <Link to='/register'>Register</Link>
